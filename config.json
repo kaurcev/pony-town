@@ -1,0 +1,47 @@
+{
+  "title": "Pony Town",
+  "discordLink": "https://discordapp.com/invite/<invite_code>",
+  "contactDiscord": "your_contact_discord#0000", 
+  "twitterLink": "https://twitter.com/<twitter_name>",
+  "contactEmail": "<your_contact_email>",
+  "port": 8090,
+  "adminPort": 8091,
+  "host": "http://localhost:8090/",
+  "local": "localhost:8090",
+  "adminLocal": "localhost:8091",
+  "proxy": false, 
+  "secret": "<some_random_string_here>", 
+  "token": "<some_other_random_string_here>",
+  "db": "mongodb://<username>:<password>@localhost:27017/<database_name>", 
+  "analytics": { 
+    "trackingID": "<tracking_id>"
+  },
+  "facebookAppId": "<facebook_id>",
+  "assetsPath": "<path_to_graphics_assets>", 
+  "season": "spring", 
+  "holiday": "none",
+  "oauth": {
+		"google": {
+			"clientID": "<CLIENT_ID_HERE>",
+			"clientSecret": "<CLIENT_SECRET_HERE>"
+		}
+  },
+  "servers": [
+    {
+      "id": "dev",
+      "port": 8090,
+      "path": "/s00/ws",
+      "local": "localhost:8090",
+      "name": "Dev server",
+      "desc": "Development server",
+      "season": "summer", 
+      "holiday": "none",
+      "flag": "test", 
+      "flags": { 
+        "test": true,
+        "editor": true,
+      },
+      "alert": "18+",
+    },
+  ]
+}
